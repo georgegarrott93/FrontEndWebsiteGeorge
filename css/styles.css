@@ -354,6 +354,12 @@ body {
 	width: 940px;
 }
 
+hr {
+	width: 600px;
+}
+.mainHr {
+	width: 940px;
+}
 
 #social-media {
 	border-radius: 20px;
@@ -460,6 +466,13 @@ body {
 
 @media (max-width: 535px) {
 body {
+	width: 535px;
+}
+
+hr {
+	width: 353px;
+}
+.mainHr {
 	width: 535px;
 }
 
