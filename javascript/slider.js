@@ -1,3 +1,4 @@
+// start at slide index 1
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -5,6 +6,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// show current slide
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

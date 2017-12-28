@@ -1,3 +1,4 @@
+/* selects body defaults */
 body { 
 font-family: 'Advent Pro';
 background: #231f20;
@@ -10,11 +11,12 @@ margin: 0 auto;
 clear: both;
 }
 
+/* selects <a> default */
 a {
 	text-decoration: none;
 }
 
-
+/* social-media class */
 #social-media {
 	border-radius: 20px;
 	margin: 2px;
@@ -23,6 +25,7 @@ a {
 	float: left;
 }
 
+/* input class */
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
@@ -37,10 +40,13 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
+
+/* logo class */
 #logo {
 	padding-left: 39%;
 }
 
+/* mainNav default */
 .mainNav {
 	background-color: inherit;
 	height: 40px;
@@ -52,12 +58,14 @@ input[type=text] {
 	z-index:1000;
 }
 
+/* mainNav unordered functions */
 .mainNav  ul{
 	list-style: none;
 	margin: 0px;
 	padding: 0px
 }
 
+/* mainNav unordered list functions */
 .mainNav ul li{
 	float: left;
 	width: 200px;
@@ -67,29 +75,38 @@ input[type=text] {
 	text-align: center;
 }
 
+/*  mainNav unordered list <a> */
 .mainNav ul li a {
 	text-decoration: none;
 	color: white;
 	display: block;
 }
+
+/*  mainNav unordered list <a> link and visited links */
 .mainNav ul li a:link, .mainNav ul li a:visited{
 	color: white;
 }
+
+/* mainNav unordered list <a> on hover */
 .mainNav ul li a:hover{
 	background-color: #black;
 	color: white;
 	text-shadow: none;
 	font-size: 26px;
 }
+
+/*  mainNav unordered list for sub menu */
 .mainNav ul li ul li{
 	display: none;
 }
 
+/*  mainNav unordered list for sub menu hover */
 .mainNav ul li:hover ul li{
 	display: block;
 	background-color: #231f20;
 }
 
+/*  box menu */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -101,6 +118,7 @@ input[type=text] {
   margin-bottom: -40px;
 }
 
+/* do not display slides */
 .mySlides {
     display: none;
 }
@@ -126,7 +144,7 @@ input[type=text] {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with small see through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -145,7 +163,7 @@ input[type=text] {
   transition: background-color 0.6s ease;
 }
 
-
+/* dot hover */
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -158,41 +176,38 @@ input[type=text] {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+/* about section */
 .about {
 	text-align: center;
 }
 
+/* line break default */
 hr {
 	width: 600px;
 }
+
+/* line break id */
 .mainHr {
 	width: 1300px;
 }
 
+/* bottomBar functions on home page*/
 #bottomBar {
 	padding-left: 17%;
 	padding-top: 20px;
 }
 
+/* bottom bar image on home page */
 #bottomBar img{
 	height: 200px;
 }
 
+/* image on home screen - Peta */
 #peta {
 	padding-left: 220px;
 }
 
-
-
+/* thegallery on range page which holds the images */
 .thegallery {
 	display: block;
 	background-color: #231f20;
@@ -203,6 +218,7 @@ hr {
 	float: left;
 }
 
+/* each gallery image */
 .gallery {
     margin-left: 80px;
 	margin-top: 40px;
@@ -211,6 +227,7 @@ hr {
 	float: left;
 }
 
+/* gallery if hovered */
 .gallery:hover{
     border: 1px solid #777;
 	background-color: inherit;
@@ -219,31 +236,37 @@ hr {
 	text-decoration: underline;
 }
 
+/* img defaults in gallery */
 .gallery img {
     width: 100%;
     height: auto;
 }
 
+/* description for bags in gallery */
 .desc {
     padding: 15px;
     text-align: center;
 }
 
+/* class for the footer */
 #footer {
 	padding-top: 10px;
 }
 
+/* paragraph for footer */
 #footer p {
 	display: inline;
 	margin: 30px;
 	padding-left: 130px;
 }
 
+/* <a> in gallery */
 #footer a {
 	text-decoration: none;
 	color: white;
 }
 
+/* <a> hover functions */
 #footer a:hover{
  	background-color: #black;
 	color: white;
@@ -251,11 +274,12 @@ hr {
 	text-decoration: underline;
 }
 
+/* class for content */
 #content {
 	width: 90%;
 }
 
-
+/* container id for product pages */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -263,6 +287,7 @@ hr {
   display: flex;
 }
 
+/* left column on the product page with image */
 .left-column {
   width: 50%;
   position: relative;
@@ -271,12 +296,13 @@ hr {
   transition: all 0.3s ease;
 }
 
- 
+/* right column on product page  */
 .right-column {
   width: 50%;
   margin-top: 20px;
 }
  
+/* left column with the image functions */
 .left-column .img-top {
      display: none;
      position: absolute;
@@ -295,6 +321,7 @@ hr {
   opacity: 1;
 }
 
+/* product description on product page */
 .product-description {
   border-bottom: 1px solid #E1E8EE;
   margin-bottom: 20px;
@@ -313,6 +340,7 @@ hr {
   line-height: 24px;
 }
 
+/* product colour on product page */
 .product-colour {
   margin-bottom: 30px;
 }
@@ -321,17 +349,19 @@ hr {
   font-size: 18px;
 }
  
+/* color choose on product page */
 .color-choose div {
   display: inline-block;
   padding: 5px;
 }
 
-
+/* class for contact form on contact us */
 #contact-form {
 	width: 70%;
 	padding-left: 350px;
 }
 
+/* input definition on contact us page */
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form input[type="tel"],
@@ -348,6 +378,7 @@ hr {
     border-radius:5px;
 }
 
+/*  contact form button for submitting */
 #contact-form button[type="submit"] {
     cursor:pointer;
     width:20%;
@@ -362,7 +393,7 @@ hr {
     border-radius:5px;
 }
 
-
+/* sites functions on sitemap page */
 .sites h1{
 	text-decoration: underline;
 	color: white;
@@ -387,6 +418,7 @@ hr {
 	font-size: 24px;
 }
 
+/* map size on contact us page */
 #map {
     height: 400px;
     width: 100%;
@@ -725,6 +757,7 @@ hr {
 
 }
 
+/* Responsiveness for 375px */
 @media (max-width: 375px) {
 body {
 	width: 375px;
