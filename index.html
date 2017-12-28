@@ -1,99 +1,114 @@
 <!DOCTYPE html> 
 <html lang="en">
 
+<!-- This is the header containing the title, the links to stylesheet, viewport and the font which was chosen. -->
 <head>
-<title> Hutler Bags </title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/styles.css" title="main">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+	<title> Hutler Bags </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" title="main">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 </head>
 
+<!-- This is the body for the index page -->
 <body> 
+	<!-- This is div for the social media header with the images as icons for facebook, twitter, Instagram and Pinterest. -->
 	<div id="social-media">
-	<a href="https://www.facebook.com">
-	<img src="images/facebook.png" alt="Facebook" height="50px">
-	</a>
-	<a href="https://www.twitter.com">
-	<img src="images/twitter.png" alt="Twitter" height="50px">
-	</a>
-	<a href="https://www.instagram.com">
-	<img src="images/instagram.png" alt="Instagram" height="50px">
-	</a>
-	<a href="https://www.pinterest.com">
-	<img src="images/pinterest.png" alt="Pinterest" height="50px">
-	</a>
+		<a href="https://www.facebook.com">
+			<img src="images/facebook.png" alt="Facebook" height="50px">
+		</a>
+		<a href="https://www.twitter.com">
+			<img src="images/twitter.png" alt="Twitter" height="50px">
+		</a>
+		<a href="https://www.instagram.com">
+			<img src="images/instagram.png" alt="Instagram" height="50px">
+		</a>
+		<a href="https://www.pinterest.com">
+			<img src="images/pinterest.png" alt="Pinterest" height="50px">
+		</a>
 	</div>
+	
+	<!-- This is the div for the Logo  -->
 	<div id="logo">
-	<img src="images/hutlerLogo.jpg" alt="Hutler Logo" height="150px" >
+		<img src="images/hutlerLogo.jpg" alt="Hutler Logo" height="150px" >
 	</div>
+	
+	<!-- This the div for the main navigation bar on the site containing the submenu for the range -->
 	<div class="mainNav">
-	<nav>
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="range.html">RANGE</a>
-				<ul>
-					<li><a href="tottenhamshire.html">TOTTENHAMSHIRE</a></li>					
-					<li><a href="realmadriden.html">REAL MADRIDEN</a></li>
-					<li><a href="borussiateeth.html">BORUSSIA TEETH</a></li>
-				</ul>
-			</li>
-			<li><a href="contactus.html">CONTACT</a></li>
-		</ul>
-	</nav>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="range.html">RANGE</a>
+					<ul>
+						<li><a href="tottenhamshire.html">TOTTENHAMSHIRE</a></li>					
+						<li><a href="realmadriden.html">REAL MADRIDEN</a></li>
+						<li><a href="borussiateeth.html">BORUSSIA TEETH</a></li>
+					</ul>
+				</li>
+				<li><a href="contactus.html">CONTACT</a></li>
+			</ul>
+		</nav>
 	</div>
 	
+	<!-- This is the div for the slideshow-container -->
+	<div class="slideshow-container">
+		<!-- The following divs are for the class mySlides which shows the images in the slideshow and are given a width-->
+		<div class="mySlides">
+			<img src="images/stella.jpg" style="width:100%">
+		</div>	
+		
+		<div class="mySlides">
+			<img src="images/stella1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<img src="images/stella2.jpg" style="width:100%">
+		</div>
+		
+		<!-- These classes are for the Next and Previous buttons which are used to navigate on the slideshow.-->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>  
+	</div>
+	<!-- This break is to add the dots to navigate the slides. -->
+	<br>
 	
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="images/stella.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
+	<!-- This div is for the dots class which navigate the slides. -->
+	<div class="dots" style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	
+	<!-- This links to the javascript for the slider. -->
+	<script src="javascript/slider.js">
+	</script>	
 
-  <div class="mySlides fade">
-    <img src="images/stella1.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
+	<!-- This is the div for the bottom bar which shows the shipping worldwide and the peta logo. -->
+	<div id="bottomBar"> 
+		<img src="images/worldmap.jpg" alt="Shipping" >
+		<img id="peta" src="images/peta.jpeg" alt="Peta" >	
+	</div>
 
-  <div class="mySlides fade">
-    <img src="images/stella2.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>  
-  
-</div>
-<br>
-
-<div class="dots" style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-<script src="javascript/slider.js">
-</script>	
-<div id="bottomBar"> 
-	<img src="images/worldmap.jpg" alt="Shipping" >
-	<img id="peta" src="images/peta.jpeg" alt="Peta" >	
-</div>
-<footer>
-<div id="footer">
-	<hr class="mainHr">
-	</hr>
-		<p>
-			HANNAH BUTLER
-		</p>
-		<p>
-			WEBSITE DESIGNER - GEORGE GARROTT
-		</p>
-		<p>
-			<a href="sitemap.html">SITEMAP</a>
-		</p>
-<hr class="mainHr">
-</hr>
-</div>
-</footer>
+	<!--  This the footer which contains the company owner and the website designer information aswell as a link to sitemap. -->
+	<footer>
+		<div id="footer">
+			<!-- This is for the line break to use the mainHr class. -->
+			<hr class="mainHr">
+			</hr>
+			<p>
+				HANNAH BUTLER
+			</p>
+			<p>
+				WEBSITE DESIGNER - GEORGE GARROTT
+			</p>
+			<p>
+				<a href="sitemap.html">SITEMAP</a>
+			</p>
+			<hr class="mainHr">
+			</hr>
+		</div>
+	</footer>
+	
 </body>	
 </html>

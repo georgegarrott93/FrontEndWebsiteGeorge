@@ -1,100 +1,129 @@
 <!DOCTYPE html> 
 <html lang="en">
 
+<!-- This is the header containing the title, the links to stylesheet, viewport and the font which was chosen. -->
 <head>
-<title> Hutler Bags </title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/styles.css" title="main">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+	<title> Hutler Bags </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" title="main">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 </head>
 
+<!-- This is the body for the index page -->
 <body> 
+	<!-- This is div for the social media header with the images as icons for facebook, twitter, Instagram and Pinterest. -->
 	<div id="social-media">
-	<a href="https://www.facebook.com">
-	<img src="images/facebook.png" alt="Facebook" height="50px">
-	</a>
-	<a href="https://www.twitter.com">
-	<img src="images/twitter.png" alt="Twitter" height="50px">
-	</a>
-	<a href="https://www.instagram.com">
-	<img src="images/instagram.png" alt="Instagram" height="50px">
-	</a>
-	<a href="https://www.pinterest.com">
-	<img src="images/pinterest.png" alt="Pinterest" height="50px">
-	</a>
+		<a href="https://www.facebook.com">
+			<img src="images/facebook.png" alt="Facebook" height="50px">
+		</a>
+		<a href="https://www.twitter.com">
+			<img src="images/twitter.png" alt="Twitter" height="50px">
+		</a>
+		<a href="https://www.instagram.com">
+			<img src="images/instagram.png" alt="Instagram" height="50px">
+		</a>
+		<a href="https://www.pinterest.com">
+			<img src="images/pinterest.png" alt="Pinterest" height="50px">
+		</a>
 	</div>
+	
+	<!-- This is the div for the logo -->
 	<div id="logo">
-	<img src="images/hutlerLogo.jpg" alt="Hutler Logo" height="150px" >
+		<img src="images/hutlerLogo.jpg" alt="Hutler Logo" height="150px" >
 	</div>
 	
+	<!-- This the div for the main navigation bar on the site containing the submenu for the range -->
 	<div class="mainNav">
-	<nav>
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="range.html">RANGE</a>
-				<ul>
-					<li><a href="tottenhamshire.html">TOTTENHAMSHIRE</a></li>					
-					<li><a href="realmadriden.html">REAL MADRIDEN</a></li>
-					<li><a href="borussiateeth.html">BORUSSIA TEETH</a></li>
-				</ul>
-			</li>
-			<li><a href="contactus.html">CONTACT</a></li>
-		</ul>
-	</nav>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="range.html">RANGE</a>
+					<ul>
+						<li><a href="tottenhamshire.html">TOTTENHAMSHIRE</a></li>					
+						<li><a href="realmadriden.html">REAL MADRIDEN</a></li>
+						<li><a href="borussiateeth.html">BORUSSIA TEETH</a></li>
+					</ul>
+				</li>
+				<li><a href="contactus.html">CONTACT</a></li>
+			</ul>
+		</nav>
 	</div>
 	
-<form id="contact-form" action="/" method="post">
+	<!-- This is the div for the map id -->
+    <div id="map"></div>
+	
+	<!-- This is the javascript link for the google map -->
+	<script src="javascript/maps.js">
+	</script>
+	
+	<!-- This is the script for the google maps api -->
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3frT4wVXyGA3oTkOnGWA6UncsV7aV3Zo&callback=initMap">
+	</script>
+	
+	<!-- This is the form called contact-form with divs for Name, email, telephone and message -->
+	<form id="contact-form" action="/" method="post">
         <h3>CONTACT US</h3>
-        <div>
-                <label>
-                        <span>Name: (required)</span>
-                        <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
-                </label>
-        </div>
-        <div>
-                <label>
-                        <span>Email: (required)</span>
-                        <input placeholder="Please enter your email address" type="email" tabindex="2" required>
-                </label>
-        </div>
-        <div>
-                <label>
-                        <span>Telephone: (required)</span>
-                        <input placeholder="Please enter your number" type="tel" tabindex="3" required>
-                </label>
-        </div>
-        <div>
-                <label>
-                        <span>Message: (required)</span>
-                        <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
-                </label>
-        </div>
-        <div>
-                <button name="submit" type="submit" id="contact-submit">Send Email</button>
-        </div>
 		
-<script src="javascript/form.js">
-</script>
-
-</form>         
-<footer>
-<div id="footer">
-	<hr class="mainHr">
-	</hr>
-		<p>
-			HANNAH BUTLER
-		</p>
-		<p>
-			WEBSITE DESIGNER - GEORGE GARROTT
-		</p>
-		<p>
-			<a href="sitemap.html">SITEMAP</a>
-		</p>
-<hr class="mainHr">
-</hr>
-</div>    
-</footer>
+		<div>
+            <label>
+				<span>Name: (required)</span>
+				<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+			</label>
+		</div>
+		
+		<div>
+			<label>
+				<span>Email: (required)</span>
+				<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+			</label>
+		</div>
+		
+		<div>
+			<label>
+				<span>Telephone: (required)</span>
+				<input placeholder="Please enter your number" type="tel" tabindex="3" required>
+			</label>
+		</div>
+		
+		<div>
+			<label>
+				<span>Message: (required)</span>
+				<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+			</label>
+		</div>
+		
+		<!-- This is the div for the submit button -->
+		<div>
+			<button name="submit" type="submit" id="contact-submit">Send Email</button>
+		</div>
+		
+		<!-- This is the link to the javascript form -->
+		<script src="javascript/form.js">
+		</script>
+	</form>    
+	
+	<!--  This the footer which contains the company owner and the website designer information aswell as a link to sitemap. -->
+	<footer>
+		<div id="footer">
+			<!-- This is for the line break to use the mainHr class. -->
+			<hr class="mainHr">
+			</hr>
+			<p>
+				HANNAH BUTLER
+			</p>
+			<p>
+				WEBSITE DESIGNER - GEORGE GARROTT
+			</p>
+			<p>
+				<a href="sitemap.html">SITEMAP</a>
+			</p>
+			<hr class="mainHr">
+			</hr>
+		</div>    
+	</footer>
 </body>	
+
 </html>
