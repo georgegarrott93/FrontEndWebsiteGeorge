@@ -1,6 +1,6 @@
 /* selects body defaults */
 body { 
-font-family: 'Advent Pro';
+font-family: 'Questrial';
 background: #231f20;
 color: white;
 font-size: 22px;
@@ -89,10 +89,10 @@ input[type=text] {
 
 /* mainNav unordered list <a> on hover */
 .mainNav ul li a:hover{
-	background-color: #black;
+	background-color: inherit;
 	color: white;
 	text-shadow: none;
-	font-size: 26px;
+	font-size: 24px;
 }
 
 /*  mainNav unordered list for sub menu */
@@ -268,7 +268,7 @@ hr {
 
 /* <a> hover functions */
 #footer a:hover{
- 	background-color: #black;
+ 	background-color: inherit;
 	color: white;
 	text-shadow: none;
 	text-decoration: underline;
@@ -384,9 +384,6 @@ hr {
     width:20%;
     border:none;
     background:#565656;
-    background-image:linear-gradient(bottom, #565656 0%, black 52%);
-    background-image:-moz-linear-gradient(bottom, #565656 0%, black 52%);
-    background-image:-webkit-linear-gradient(bottom, #565656 0%, black 52%);
     color:#FFF;
     margin:0 0 5px;
     padding:10px;
@@ -483,7 +480,7 @@ hr {
 }
 
 .mainNav ul li a:hover{
-	background-color: #black;
+	background-color: inherit;
 	color: white;
 	text-shadow: none;
 	font-size: 24px;
