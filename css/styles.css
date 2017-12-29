@@ -390,6 +390,10 @@ hr {
     border-radius:5px;
 }
 
+#concept p {
+	text-decoration: underline;
+}
+
 /* sites functions on sitemap page */
 .sites h1{
 	text-decoration: underline;
@@ -431,6 +435,7 @@ body {
 hr {
 	width: 600px;
 }
+
 .mainHr {
 	width: 940px;
 }
